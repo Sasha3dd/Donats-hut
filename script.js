@@ -1,7 +1,9 @@
+// scripts.js
+
 function orderDonut() {
     alert("Дякуємо за ваше замовлення! Очікуйте на свої смачні пончики!");
 }
 
-function goToPurchase(donutType) {
-    window.location.href = 'purchase.html?type=' + donutType;
+function buyDonut() {
+    alert("Дякуємо за вашу покупку! Насолоджуйтесь своїми смачними пончиками!");
 }
