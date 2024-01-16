@@ -4,73 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Доступні пончики</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #ff66b2; /* Змінено колір фону на рожево-червоний */
-        }
-
-        h1 {
-            color: #4CAF50; /* Змінено колір заголовку */
-        }
-
-        #menu {
-            font-size: 18px;
-            color: #333; /* Змінено колір тексту меню */
-        }
-
-        #price {
-            font-size: 20px;
-            color: #4CAF50; /* Змінено колір ціни */
-        }
-
-        #orderButton {
-            padding: 10px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        #donutImage {
-            max-width: 100%;
-            height: auto;
-            margin-top: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <h1>Ласкаво просимо до нашого магазину пончиків!</h1>
 
     <p id="menu">Головне меню:</p>
-    <ul id="menu">
-        <li>Полуничний пончик</li>
-        <li>Шоколадний пончик</li>
-        <li>Пончик з ванільним кремом</li>
-        <li>Карамельний пончик</li>
-        <li>Малиновий пончик</li>
-        <li>Пончик з апельсиновим глазур'ю</li>
-        <li>Мигдальний пончик</li>
-        <li>Кокосовий пончик</li>
-        <li>Пончик з маплевим сиропом</li>
-        <li>Шоколадно-карамельний пончик</li>
-    </ul>
+    <div class="donut" onclick="goToPurchase('strawberry')">
+        <img src="link_to_strawberry_donut.jpg" alt="Полуничний пончик">
+        <p>Полуничний пончик</p>
+    </div>
+
+    <div class="donut" onclick="goToPurchase('chocolate')">
+        <img src="link_to_chocolate_donut.jpg" alt="Шоколадний пончик">
+        <p>Шоколадний пончик</p>
+    </div>
+
+    <!-- Додайте аналогічний код для інших видів пончиків -->
 
     <p id="price">Ціна: $9 за пончик</p>
 
     <button id="orderButton" onclick="orderDonut()">Замовити пончик</button>
 
-    <!-- Замініть посилання на фото на власне зображення пончика -->
-    <img id="donutImage" src="link_to_your_donut_image.jpg" alt="Пончики">
-
-    <script>
-        function orderDonut() {
-            alert("Дякуємо за ваше замовлення! Очікуйте на свої смачні пончики!");
-        }
-    </script>
-
+    <script src="scripts.js"></script>
 </body>
 </html>
