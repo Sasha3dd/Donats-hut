@@ -10,26 +10,17 @@
 </head>
 <body>
 
-    <h1>Меню покупок</h1>
-
-    <div id="purchaseMenu">
-        <h2>Меню покупок</h2>
-        <p id="description">Опис пончика:</p>
-        
-        <!-- Додайте блоки .donut для кожного виду пончика -->
-        <div class="donut">
-            <img src="link_to_strawberry_donut.jpg" alt="Полуничний пончик">
-            <p>Полуничний пончик - найсмачніший пончик з а...</p>
+    <div class="purchase-overlay">
+        <div class="purchase-menu" id="purchaseMenu">
+            <!-- Вміст меню покупок буде додано динамічно з кодом JavaScript -->
         </div>
 
-        <div class="donut">
-            <img src="link_to_chocolate_donut.jpg" alt="Шоколадний пончик">
-            <p>Шоколадний пончик - чарівна суміш справжнього шоколаду...</p>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Пошук пончиків...">
+            <button onclick="searchDonuts()">Пошук</button>
         </div>
 
-        <!-- Додайте аналогічний код для інших видів пончиків -->
-
-        <button id="buyButton" onclick="buyDonut()">Купити пончик</button>
+        <button class="close-button" onclick="closePurchaseMenu()">Закрити</button>
     </div>
 
     <script src="scripts.js"></script>
