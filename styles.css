@@ -1,24 +1,29 @@
+/* styles.css */
+
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
-    background-color: #ff66b2; /* Змінено колір фону на рожево-червоний */
+    background-color: #ff66b2;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-h1 {
-    color: #4CAF50; /* Змінено колір заголовку */
+h1, h2 {
+    color: #4CAF50;
+    width: 100%;
 }
 
-#menu {
+#mainMenu, #purchaseMenu, #productMenu {
+    flex: 1;
+    margin: 10px;
+}
+
+#menu, #price, #description {
     font-size: 18px;
-    color: #333; /* Змінено колір тексту меню */
+    color: #333;
 }
 
-#price {
-    font-size: 20px;
-    color: #4CAF50; /* Змінено колір ціни */
-}
-
-#orderButton {
+#orderButton, #buyButton {
     padding: 10px;
     background-color: #4CAF50;
     color: white;
