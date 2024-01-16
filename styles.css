@@ -2,45 +2,67 @@
 
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
-    background-color: #ff66b2;
+    margin: 0;
+    padding: 0;
+}
+
+header, main {
+    background-color: #FF4500; /* Червоно-помаранчевий фон */
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+main {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-h1, h2 {
-    color: #4CAF50;
+.donut {
+    width: 200px;
+    margin: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.purchase-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
 }
 
-#mainMenu, #purchaseMenu, #productMenu {
-    flex: 1;
-    margin: 10px;
+.purchase-menu {
+    background-color: #FF4500;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
 }
 
-#menu, #price, #description {
-    font-size: 18px;
-    color: #333;
+.search-bar {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-#orderButton, #buyButton {
+.search-bar input {
+    padding: 5px;
+    width: 70%;
+}
+
+.close-button {
+    margin-top: 20px;
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: #333;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
-
-.donut {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    cursor: pointer;
-}
-
-.donut img {
-    max-width: 100px;
-    margin-right: 10px;
-    border-radius: 5px;
 }
