@@ -8,10 +8,17 @@
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
+            background-color: white;
+            color: red;
         }
 
         h1 {
             color: #333;
+        }
+
+        #menu {
+            font-size: 18px;
+            color: red;
         }
 
         #price {
@@ -33,17 +40,7 @@
 
     <h1>Ласкаво просимо до нашого магазину пончиків!</h1>
 
-    <p>Оберіть свої улюблені пончики за ціною $9 за штуку.</p>
-
-    <p id="price">Ціна: $9 за пончик</p>
-
-    <button id="orderButton" onclick="orderDonut()">Замовити пончик</button>
-
-    <script>
-        function orderDonut() {
-            alert("Дякуємо за ваше замовлення! Очікуйте на свої смачні пончики!");
-        }
-    </script>
-
-</body>
-</html>
+    <p id="menu">Головне меню:</p>
+    <ul id="menu">
+        <li>Полуничний пончик</li>
+        <li>Шоколадний п
