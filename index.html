@@ -8,22 +8,21 @@
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
-            background-color: white;
-            color: red;
+            background-color: #ff66b2; /* Змінено колір фону на рожево-червоний */
         }
 
         h1 {
-            color: #333;
+            color: #4CAF50; /* Змінено колір заголовку */
         }
 
         #menu {
             font-size: 18px;
-            color: red;
+            color: #333; /* Змінено колір тексту меню */
         }
 
         #price {
             font-size: 20px;
-            color: green;
+            color: #4CAF50; /* Змінено колір ціни */
         }
 
         #orderButton {
@@ -34,6 +33,12 @@
             border-radius: 5px;
             cursor: pointer;
         }
+
+        #donutImage {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
@@ -43,4 +48,29 @@
     <p id="menu">Головне меню:</p>
     <ul id="menu">
         <li>Полуничний пончик</li>
-        <li>Шоколадний п
+        <li>Шоколадний пончик</li>
+        <li>Пончик з ванільним кремом</li>
+        <li>Карамельний пончик</li>
+        <li>Малиновий пончик</li>
+        <li>Пончик з апельсиновим глазур'ю</li>
+        <li>Мигдальний пончик</li>
+        <li>Кокосовий пончик</li>
+        <li>Пончик з маплевим сиропом</li>
+        <li>Шоколадно-карамельний пончик</li>
+    </ul>
+
+    <p id="price">Ціна: $9 за пончик</p>
+
+    <button id="orderButton" onclick="orderDonut()">Замовити пончик</button>
+
+    <!-- Замініть посилання на фото на власне зображення пончика -->
+    <img id="donutImage" src="link_to_your_donut_image.jpg" alt="Пончики">
+
+    <script>
+        function orderDonut() {
+            alert("Дякуємо за ваше замовлення! Очікуйте на свої смачні пончики!");
+        }
+    </script>
+
+</body>
+</html>
