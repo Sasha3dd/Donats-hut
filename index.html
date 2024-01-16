@@ -3,29 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Доступні пончики</title>
+    <title>Головне меню</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <h1>Ласкаво просимо до нашого магазину пончиків!</h1>
+    <h1>Головне меню</h1>
 
-    <p id="menu">Головне меню:</p>
-    <div class="donut" onclick="goToPurchase('strawberry')">
-        <img src="link_to_strawberry_donut.jpg" alt="Полуничний пончик">
-        <p>Полуничний пончик</p>
+    <div id="mainMenu">
+        <p id="menu">Основне меню:</p>
+        <!-- Додайте блоки .donut для кожного виду пончика -->
+        <div class="donut">
+            <img src="link_to_strawberry_donut.jpg" alt="Полуничний пончик">
+            <p>Полуничний пончик</p>
+        </div>
+
+        <div class="donut">
+            <img src="link_to_chocolate_donut.jpg" alt="Шоколадний пончик">
+            <p>Шоколадний пончик</p>
+        </div>
+
+        <!-- Додайте аналогічний код для інших видів пончиків -->
+
+        <p id="price">Ціна: $9 за пончик</p>
+
+        <button id="orderButton" onclick="orderDonut()">Замовити пончик</button>
     </div>
 
-    <div class="donut" onclick="goToPurchase('chocolate')">
-        <img src="link_to_chocolate_donut.jpg" alt="Шоколадний пончик">
-        <p>Шоколадний пончик</p>
+    <div id="purchaseMenu">
+        <h2>Меню покупок</h2>
+        <p id="description">Опис пончика:</p>
+        
+        <!-- Додайте блоки .donut для кожного виду пончика -->
+        <div class="donut">
+            <img src="link_to_strawberry_donut.jpg" alt="Полуничний пончик">
+            <p>Полуничний пончик - найсмачніший пончик з а...</p>
+        </div>
+
+        <div class="donut">
+            <img src="link_to_chocolate_donut.jpg" alt="Шоколадний пончик">
+            <p>Шоколадний пончик - чарівна суміш справжнього шоколаду...</p>
+        </div>
+
+        <!-- Додайте аналогічний код для інших видів пончиків -->
+
+        <button id="buyButton" onclick="buyDonut()">Купити пончик</button>
     </div>
 
-    <!-- Додайте аналогічний код для інших видів пончиків -->
-
-    <p id="price">Ціна: $9 за пончик</p>
-
-    <button id="orderButton" onclick="orderDonut()">Замовити пончик</button>
+    <div id="productMenu">
+        <h2>Меню товару</h2>
+        <!-- Додайте код для меню товару за аналогією з іншими меню -->
+    </div>
 
     <script src="scripts.js"></script>
 </body>
