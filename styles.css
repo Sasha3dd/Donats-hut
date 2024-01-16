@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #ff66b2; /* Змінено колір фону на рожево-червоний */
+}
+
+h1 {
+    color: #4CAF50; /* Змінено колір заголовку */
+}
+
+#menu {
+    font-size: 18px;
+    color: #333; /* Змінено колір тексту меню */
+}
+
+#price {
+    font-size: 20px;
+    color: #4CAF50; /* Змінено колір ціни */
+}
+
+#orderButton {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.donut {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.donut img {
+    max-width: 100px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
