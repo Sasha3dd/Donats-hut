@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Доступні пончики</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        #price {
+            font-size: 20px;
+            color: green;
+        }
+
+        #orderButton {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Ласкаво просимо до нашого магазину пончиків!</h1>
+
+    <p>Оберіть свої улюблені пончики за ціною $9 за штуку.</p>
+
+    <p id="price">Ціна: $9 за пончик</p>
+
+    <button id="orderButton" onclick="orderDonut()">Замовити пончик</button>
+
+    <script>
+        function orderDonut() {
+            alert("Дякуємо за ваше замовлення! Очікуйте на свої смачні пончики!");
+        }
+    </script>
+
+</body>
+</html>
